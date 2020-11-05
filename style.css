@@ -1,0 +1,186 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Borders */
+
+table, th, td {
+    border-collapse: collapse;
+    border: none;
+    color: gray;
+}
+
+thead > tr > th,
+tbody > tr > td {
+    border-right: 1px solid lightgrey;
+}
+
+thead > tr > th,
+tbody > tr > td {
+    border-left: none;
+}
+
+thead > tr > th:first-of-type,
+tbody > tr > td:first-of-type,
+thead > tr > th:last-of-type,
+tbody > tr > td:last-of-type {
+    border-right: none;
+}
+
+tbody > tr > td > hr {
+    margin-top: -25px;
+    border: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+tbody > tr > td:nth-of-type(1) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Cell Sizes */
+
+td {
+    width: 10vw;
+    max-width: 10vw;
+    height: 5vh;
+}
+
+thead > tr:nth-of-type(1) > th:nth-of-type(4) {
+    position: relative;
+    overflow: hidden;
+}
+
+thead > tr:nth-of-type(1) > th > div {
+    background-color: yellow;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: 15px;
+    right: -50px;
+}
+
+thead > tr:nth-of-type(1) > th > div > p {
+    font-size: 8px;
+    color: black;
+    position: absolute;
+    left: 30px;
+}
+
+thead > tr:nth-of-type(2) > th  > p,
+thead > tr:nth-of-type(2) > th  > h2 {
+    display: inline-block;
+}
+
+thead > tr:nth-of-type(1) > th {
+    height:5vh;
+    font-weight: 200;
+}
+
+thead > tr:nth-of-type(2) > th {
+    height: 12.5vh;
+}
+
+thead > tr:nth-of-type(2) > th  > p:nth-of-type(1) {
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+thead > tr:nth-of-type(2) > th  > p:nth-of-type(2) {
+    padding-left: 5px;
+}
+
+thead > tr:nth-of-type(2) > th  > h2 {
+    font-size: 50px;
+    margin: .5vh;
+}
+
+tbody > tr > td {
+    text-align: center;
+}
+
+tbody > tr > td > img,
+tbody > tr > td > div > img {
+    width: 20px;
+
+}
+
+tbody > tr:last-of-type > td {
+    height: 5rem;
+}
+
+tbody > tr > td > input {
+    background-color: rgb(148, 152, 155);
+    color: white;
+    font-weight: 600;
+    border: none;
+    height: 2.5rem;
+    width: 6vw;
+}
+
+/* Colors */
+
+thead > tr > th {
+    color: white;
+}
+
+thead > tr:nth-of-type(1) > th:nth-of-type(2) {
+    background-color: rgb(67, 133, 153);
+}
+
+thead > tr:nth-of-type(2) > th:nth-of-type(2) {
+    background-color: rgb(92, 170, 175);
+}
+
+thead > tr:nth-of-type(1) > th:nth-of-type(3) {
+    background-color: rgb(54, 117, 98);
+}
+
+thead > tr:nth-of-type(2) > th:nth-of-type(3) {
+    background-color: rgb(58, 146, 120);
+}
+
+thead > tr:nth-of-type(1) > th:nth-of-type(4) {
+    background-color: rgb(165, 62, 62);
+}
+
+thead > tr:nth-of-type(2) > th:nth-of-type(4) {
+    background-color: rgb(238, 97, 73);
+}
+
+thead > tr:nth-of-type(1) > th:nth-of-type(5) {
+    background-color: rgb(25, 31, 25);
+}
+
+thead > tr:nth-of-type(2) > th:nth-of-type(5) {
+    background-color: rgb(58, 61, 58);
+}
+
+tbody > tr:nth-of-type(1) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(3) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(5) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(7) > td:nth-of-type(n+2) {
+    background-color: rgb(224, 223, 223);
+}
+
+tbody > tr:nth-of-type(2) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(4) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(6) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(8) > td:nth-of-type(n+2),
+tbody > tr:nth-of-type(9) > td:nth-of-type(n+2) {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Hover */
+
+input:hover {
+    background-color: rgb(238, 97, 73);
+}
